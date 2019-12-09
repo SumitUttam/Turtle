@@ -1,11 +1,12 @@
 import turtle
-from random import radiant,choice
+from random import randint,choice
 
 colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
 hexagon = turtle.Turtle() 
 hexagon.speed(1)
 hexagon.right(randint(0,360))
 x = randint(30,100)
+hexagon.width(x/10-3)
 
 for i in range(6):
     hexagon.color(choice(colors))
